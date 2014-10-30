@@ -61,6 +61,13 @@ ul{
 	padding:1em;
 }
 
+a{
+	-webkit-transition: color 0.5s ease-in-out;
+  	-moz-transition: color 0.5s ease-in-out;
+  	-o-transition: color 0.5s ease-in-out;
+  	transition: color 0.5s ease-in-out;
+}
+
 h2 a{
 	color:rgba(238, 238, 238, 0.8);
 	text-decoration: none;
@@ -79,13 +86,24 @@ img{
 	margin-right:auto;
 }
 
+#contact a{
+	color:rgba(238, 238, 238, 1);
+	text-decoration: none;
+}
+
+#contact a:hover{
+	color:rgba(238, 238, 238, 0.7);
+}
+
 /* ======= MENU ====== */
 
 #menu li {
 	display:inline-block;
 	margin: 10px;
 	color: rgba(238,0238,238, 0.9);
+	position: relative;
 }
+
 #menu li.active{
 	color: rgba(238,0238,238, 0.9);
 	color: #fff;
@@ -96,6 +114,27 @@ img{
 }
 #menu li.active a:hover{
 	color: rgba(238,0238,238, 0.75);
+}
+
+/*#menu li a:before {
+  content: "";
+  background-image: url(../img/flag.gif);
+  background-repeat: no-repeat;
+  background-position: center left;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}*/
+
+#menu li a:hover{
+	background-image: url(../img/flag.gif);
+  	background-repeat: no-repeat;
+  	background-position: center left;
+
 }
 
 #menu li a,
@@ -109,8 +148,8 @@ img{
 #menu{
 	position:fixed;
 	top:0;
-	left:0;
-	/*right:0 !important;*/
+	/*left:0;*/
+	right:0 !important;
 	height: 40px;
 	z-index: 70;
 	
