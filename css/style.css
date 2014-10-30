@@ -109,7 +109,8 @@ img{
 #menu{
 	position:fixed;
 	top:0;
-	right:0 !important;
+	left:0;
+	/*right:0 !important;*/
 	height: 40px;
 	z-index: 70;
 	
